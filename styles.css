@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #cc5200;
+}
+
+h2 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.tabela-container {
+  max-width: 800px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+.tabela-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tabela-container p {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff6600;
+  color: white;
+}
+
+td {
+  background-color: #444;
+}
+
+.descricao {
+  font-style: italic;
+  font-size: 12px;
+  color: #bbb;
+}

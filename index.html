@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Taxa de Compressão RBF Motos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Taxa de Compressão RBF Motos</h1>
+      <label for="cilindrada">Cilindrada (cm³):</label>
+      <input type="number" id="cilindrada" placeholder="Ex: 150" />
+
+      <label for="volume">Volume da Câmara (cm³):</label>
+      <input type="number" id="volume" placeholder="Ex: 15" />
+
+      <button onclick="calcularTaxa()">Calcular</button>
+
+      <h2 id="resultado"></h2>
+    </div>
+
+    <div class="tabela-container">
+      <h2>TABELA DE TAXA DE COMPRESSÃO ESTÁTICA IDEAL POR COMBUSTÍVEL</h2>
+      <p>(COM LIMITE DE SEGURANÇA)</p>
+      <p class="descricao">
+        Os valores apresentados são referentes à eficiência de combustão, não
+        tendo relação direta com velocidade final, e levam em conta valores
+        iniciais com margem de segurança. Com exceção do metanol, todos os
+        exemplos são para motos de rua.
+      </p>
+
+      <table>
+        <tr>
+          <th>Combustível</th>
+          <th>Octanas</th>
+          <th>Taxa de Compressão</th>
+          <th>Observações</th>
+        </tr>
+        <tr>
+          <td>Gasolina Comum / Aditivada</td>
+          <td>87</td>
+          <td>Até 10.5:1</td>
+          <td>Valor limite para segurança do motor.</td>
+        </tr>
+        <tr>
+          <td>Gasolina Premium</td>
+          <td>91 - 97</td>
+          <td>12 à 12.5:1</td>
+          <td>Taxas maiores apenas com gasolina de 96 a 97 octanas.</td>
+        </tr>
+        <tr>
+          <td>Etanol (Álcool)</td>
+          <td>+100</td>
+          <td>12 à 12.5:1 (mínimo)</td>
+          <td>Para eficiência real, considerar 14:1.</td>
+        </tr>
+        <tr>
+          <td>Metanol</td>
+          <td>+100*</td>
+          <td>12.5:1 (14 à 16:1)</td>
+          <td>Suporta altas taxas acima de 14.</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
