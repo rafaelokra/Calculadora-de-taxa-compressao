@@ -96,6 +96,18 @@ table {
   border-collapse: collapse;
   margin-top: 10px;
 }
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: rgb(128, 118, 220);
+}
+.lilas {
+  color: rgb(196, 111, 213);
+}
 
 th,
 td {
