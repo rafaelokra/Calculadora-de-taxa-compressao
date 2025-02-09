@@ -16,13 +16,13 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 350px;
+  max-width: 600px; /* Aumentado para ficar igual à tabela */
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
   color: #e9df23; /* Amarelo */
 }
@@ -30,12 +30,12 @@ h1 {
 label {
   display: block;
   margin: 10px 0 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 input {
-  width: 90%;
-  padding: 8px;
+  width: 95%;
+  padding: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
@@ -45,7 +45,7 @@ button {
   background-color: #e9df23; /* Amarelo */
   color: black;
   border: none;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   cursor: pointer;
   font-size: 16px;
@@ -63,14 +63,16 @@ h2 {
   color: #e9df23; /* Amarelo */
 }
 
+/* Ajustando a tabela-container para manter o mesmo tamanho do container */
 .tabela-container {
-  max-width: 100%;
-  width: 800px;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-  text-align: center; /* Centraliza o conteúdo */
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Agora tem o mesmo tamanho do container */
+  margin-bottom: 20px;
 }
 
 .tabela-container h2 {
@@ -81,7 +83,7 @@ h2 {
 
 .tabela-container p {
   font-size: 14px;
-  text-align: center; /* Centraliza os parágrafos */
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -118,10 +120,15 @@ td {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 850px) {
+@media (max-width: 768px) {
+  .container,
   .tabela-container {
-    width: 100%;
-    padding: 15px;
+    width: 90%;
+    max-width: 90%; /* Mantendo responsivo */
+  }
+
+  h1 {
+    font-size: 20px;
   }
 
   table {
@@ -135,13 +142,10 @@ td {
 }
 
 @media (max-width: 480px) {
-  .container {
-    width: 90%;
-    max-width: 320px;
-  }
-
+  .container,
   .tabela-container {
-    padding: 10px;
+    width: 95%;
+    max-width: 95%;
   }
 
   h1 {
